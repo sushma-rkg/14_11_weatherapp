@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mockup: Clear Glass</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Helvetica Neue",Arial,system-ui,sans-serif;background:#e8edf3;color:#1d2b3a;padding:24px 16px 48px}
+.page-title{text-align:center;font-size:22px;margin-bottom:4px}
+.page-note{text-align:center;color:#5b6b7c;font-size:14px;margin-bottom:28px}
+h3.group{font-size:16px;margin:28px 0 14px;color:#34475b}
+.scroll{overflow-x:auto;padding-bottom:12px}
+.row{display:flex;gap:20px;align-items:flex-start;width:max-content}
+.stack{display:flex;flex-direction:column;gap:24px;width:max-content}
+.item .label{font-size:13px;font-weight:700;color:#5b6b7c;margin-bottom:8px}
+.frame{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid #c5cfdb;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.phone{width:360px;height:640px;border-radius:36px}
+.laptop{width:960px;height:540px;border-radius:14px}
+input,button{font:inherit}
+input{outline:none}
+button{cursor:default}
+.card{position:relative;width:100%}
+.phone .card{width:316px;padding:28px 22px}
+.laptop .card{width:480px;padding:40px 40px}
+.icon{display:block;line-height:1}
+.loading{margin-top:18px;font-size:15px}
+.nf{margin-top:20px}
+.nf .icon{font-size:40px;margin-bottom:8px}
+.nf p{font-size:17px;font-weight:600}
+.nf small{display:block;margin-top:4px;font-size:14px}
+.result{margin-top:22px}
+.place h2{font-size:20px;font-weight:700}
+.time{font-size:14px;margin-top:2px}
+.temp{font-weight:700;line-height:1}
+.desc{font-size:16px}
+.details{list-style:none}
+.details li span{display:block;font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+.details li b{font-size:17px}
+
+.screen{background:radial-gradient(circle at 18% 22%,#fff 0,rgba(255,255,255,0) 32%),radial-gradient(circle at 85% 80%,#8ec8f6 0,rgba(142,200,246,0) 42%),radial-gradient(circle at 78% 15%,rgba(255,255,255,.9) 0,rgba(255,255,255,0) 22%),#c6e3fb}
+.card{background:rgba(255,255,255,.55);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.85);border-radius:48px;text-align:center;box-shadow:0 10px 40px rgba(60,120,190,.15)}
+h1{font-size:24px;font-weight:600;color:#0f3a66;letter-spacing:.01em;margin-bottom:20px}
+.search{display:flex;align-items:center;background:#fff;border-radius:999px;padding:6px;box-shadow:0 6px 20px rgba(60,120,190,.15)}
+.search input{flex:1;min-width:0;border:0;background:transparent;padding:10px 12px 10px 18px;font-size:16px;color:#0f3a66}
+.search input::placeholder{color:#8fa8c0}
+.search button{border:0;border-radius:999px;padding:11px 20px;font-size:15px;font-weight:700;color:#fff;background:#2b7fdc}
+.loading{color:#0f3a66;font-weight:600}
+.nf p{color:#0f3a66}.nf small{color:#4b6d8f}
+.place h2{color:#0f3a66}.time{color:#4b6d8f}
+.main{margin:14px 0 16px}
+.main .icon{font-size:60px}
+.temp{font-size:76px;font-weight:300;color:#0f3a66;margin-top:4px}
+.desc{color:#2f567f;margin-top:4px}
+.details{display:flex;justify-content:space-between;background:rgba(255,255,255,.6);border-radius:30px;padding:14px 4px}
+.details li{flex:1;padding:2px 6px}
+.details li+li{border-left:1.5px solid rgba(43,127,220,.25)}
+.details li span{color:#4b6d8f;margin-bottom:3px}
+.details li b{color:#0f3a66;font-size:15px}
+</style>
+</head>
+<body>
+<h1 class="page-title">Clear Glass</h1>
+<p class="page-note">Frosted-glass card over soft clouds, joined search pill. Design only, nothing works yet. Weather values are made up.</p>
+<h3 class="group">On a phone</h3>
+<div class="scroll"><div class="row"><div class="item"><div class="label">Before searching</div><div class="frame screen phone"><div class="card"><h1>Weather App</h1><div class="search"><input type="text" value="" placeholder="Enter a city name" aria-label="City name" readonly><button type="button">Search</button></div></div></div></div><div class="item"><div class="label">Loading</div><div class="frame screen phone"><div class="card"><h1>Weather App</h1><div class="search"><input type="text" value="London" placeholder="Enter a city name" aria-label="City name" readonly><button type="button">Search</button></div><p class="loading">Loading...</p></div></div></div><div class="item"><div class="label">Weather result</div><div class="frame screen phone"><div class="card"><h1>Weather App</h1><div class="search"><input type="text" value="London" placeholder="Enter a city name" aria-label="City name" readonly><button type="button">Search</button></div><div class="result">
+  <div class="place"><h2>London, United Kingdom</h2><p class="time">Sat 14 Nov, 10:42</p></div>
+  <div class="main"><span class="icon">⛅</span><div class="temp">24°C</div><p class="desc">Partly cloudy</p></div>
+  <ul class="details"><li><span>Feels like</span><b>26°C</b></li><li><span>Humidity</span><b>58%</b></li><li><span>Wind</span><b>14 km/h NW</b></li></ul>
+</div></div></div></div><div class="item"><div class="label">City not found</div><div class="frame screen phone"><div class="card"><h1>Weather App</h1><div class="search"><input type="text" value="Londn" placeholder="Enter a city name" aria-label="City name" readonly><button type="button">Search</button></div><div class="nf"><span class="icon">🔍</span><p>Oops! We couldn't find that city.</p><small>Please check the spelling and try again.</small></div></div></div></div></div></div>
+<h3 class="group">On a laptop</h3>
+<div class="scroll"><div class="stack"><div class="item"><div class="label">Before searching</div><div class="frame screen laptop"><div class="card"><h1>Weather App</h1><div class="search"><input type="text" value="" placeholder="Enter a city name" aria-label="City name" readonly><button type="button">Search</button></div></div></div></div><div class="item"><div class="label">Loading</div><div class="frame screen laptop"><div class="card"><h1>Weather App</h1><div class="search"><input type="text" value="London" placeholder="Enter a city name" aria-label="City name" readonly><button type="button">Search</button></div><p class="loading">Loading...</p></div></div></div><div class="item"><div class="label">Weather result</div><div class="frame screen laptop"><div class="card"><h1>Weather App</h1><div class="search"><input type="text" value="London" placeholder="Enter a city name" aria-label="City name" readonly><button type="button">Search</button></div><div class="result">
+  <div class="place"><h2>London, United Kingdom</h2><p class="time">Sat 14 Nov, 10:42</p></div>
+  <div class="main"><span class="icon">⛅</span><div class="temp">24°C</div><p class="desc">Partly cloudy</p></div>
+  <ul class="details"><li><span>Feels like</span><b>26°C</b></li><li><span>Humidity</span><b>58%</b></li><li><span>Wind</span><b>14 km/h NW</b></li></ul>
+</div></div></div></div><div class="item"><div class="label">City not found</div><div class="frame screen laptop"><div class="card"><h1>Weather App</h1><div class="search"><input type="text" value="Londn" placeholder="Enter a city name" aria-label="City name" readonly><button type="button">Search</button></div><div class="nf"><span class="icon">🔍</span><p>Oops! We couldn't find that city.</p><small>Please check the spelling and try again.</small></div></div></div></div></div></div>
+</body>
+</html>

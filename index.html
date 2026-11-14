@@ -9,9 +9,26 @@
 <body>
   <main class="card">
     <h1>Weather App</h1>
-    <div class="search">
-      <input type="text" placeholder="Enter a city name" aria-label="City name">
-      <button type="button">Search</button>
+    <form class="search" id="search-form">
+      <input type="text" id="city-input" placeholder="Enter a city name" aria-label="City name" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+    <p class="message" id="message" hidden></p>
+    <div class="result" id="result" hidden>
+      <div class="place">
+        <h2 id="place"></h2>
+        <p class="time" id="time"></p>
+      </div>
+      <div class="main">
+        <img class="icon" id="icon" alt="">
+        <div class="temp" id="temp"></div>
+        <p class="desc" id="desc"></p>
+      </div>
+      <ul class="details">
+        <li><span>Feels like</span><b id="feels"></b></li>
+        <li><span>Humidity</span><b id="humidity"></b></li>
+        <li><span>Wind</span><b id="wind"></b></li>
+      </ul>
     </div>
   </main>
   <script src="script.js"></script>

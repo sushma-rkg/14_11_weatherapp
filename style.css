@@ -83,3 +83,83 @@ h1 {
     padding: 40px;
   }
 }
+
+.message {
+  margin-top: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f3a66;
+}
+
+.result {
+  margin-top: 22px;
+}
+
+.place h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f3a66;
+}
+
+.time {
+  margin-top: 2px;
+  font-size: 14px;
+  color: #4b6d8f;
+}
+
+.main {
+  margin: 14px 0 16px;
+}
+
+.icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}
+
+.temp {
+  margin-top: 4px;
+  font-size: 76px;
+  font-weight: 300;
+  line-height: 1;
+  color: #0f3a66;
+}
+
+.desc {
+  margin-top: 4px;
+  font-size: 16px;
+  color: #2f567f;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 4px;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
+}
+
+.details li {
+  flex: 1;
+  padding: 2px 6px;
+}
+
+.details li + li {
+  border-left: 1.5px solid rgba(43, 127, 220, 0.25);
+}
+
+.details li span {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #4b6d8f;
+}
+
+.details li b {
+  font-size: 15px;
+  color: #0f3a66;
+}
